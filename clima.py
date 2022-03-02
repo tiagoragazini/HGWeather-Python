@@ -42,8 +42,8 @@ def clima_hoje(detalhes_cidade):
 
 def clima_semana(detalhes_cidade):
     print("Gostaria de checar a previsão do tempo para os próximos dias? Digite 1!")
-    print("Ou digite qualquer outro caractere se desejar sair da aplicação.")
-    escolha = input("Sua escolha: ")
+    print("Ou digite qualquer outro número se desejar sair da aplicação.")
+    escolha = int(input("Sua escolha: "))
     if escolha == 1:
         semana.checar_clima_semana(detalhes_cidade)
     else:
